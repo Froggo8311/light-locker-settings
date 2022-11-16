@@ -28,6 +28,10 @@ import argparse
 import shlex
 import os
 import subprocess
+
+''' Specify the GTK version '''
+import gi
+gi.require_version('Gtk', '3.0')
 from gi.repository import Gtk, GLib, Gio
 
 import psutil
